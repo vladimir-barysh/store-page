@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .container {
     display: flex;
     gap: 20px;
@@ -24,17 +25,92 @@ body {
     box-shadow: 0 0 10px #ccc;
     border-radius: 5px;
     width: 500px;
-    margin-inline: 40px;
+    margin-inline: 70px;
 }
+
 .details-container {
     flex: 1;
     padding-left: 50px;
 }
-.quantity-control {
+
+.link-container{
+    /*background-color: red;*/
+    width: 600px;
+    margin-top: 25px;
+}
+
+.sport-swimsuits{
+    margin-right: 100px;
+}
+
+.all-models{
+    margin-right: 100px;
+}
+
+.price-container{
+    /*background-color: yellow;*/
+    width: 600px;
+    margin-top: 50px;
+}
+
+.old-price{
+    font-size: 25px;
+    opacity: 30%;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.discount-price{
+    font-size: 25px;
+    opacity: 50%;
+    margin-right: 40px;
+}
+
+.final-price{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.promo-text{
+    font-size: 20px;
+}
+
+.instock-container{
+    width: 570px;
+    background-color: #dddcdc;
+    padding: 15px;
+    border-radius: 1px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.info-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 8px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+a{
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.quantity-container {
+    /*background-color: orange;*/
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
 }
 .quantity-control button {
     width: 30px;
@@ -46,6 +122,15 @@ body {
     text-align: center;
     font-size: 16px;
 }
+
+.buttons-container{
+    display: flex;
+    /*background-color: lime;*/
+    width: 600px;
+    margin-top: 25px;
+    padding-left: 10px;
+    gap: 100px;
+}
 .buy-button {
     display: block;
     padding: 10px 20px;
@@ -55,4 +140,10 @@ body {
     cursor: pointer;
     border: none;
     font-size: 16px;
+}
+
+.description-container{
+    /*background-color: green;*/
+    width: 750px;
+    margin-top: 70px;
 }
