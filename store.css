@@ -4,25 +4,31 @@ body {
 .container {
     display: flex;
     gap: 20px;
-    margin: auto;
+    margin: 30px;
     padding: 20px;
 }
 
-.images {
+.images-container {
     display: flex;
     flex-direction: column;
-    width: 20px;
+    width: 180px;
     gap: 10px;
-    margin-right: 0px;
+}
+
+.images-container img{
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;;
 }
 
 .main-image img {
-    width: 400px;
-    border: 1px solid #ccc;
-    padding: 5px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;
+    width: 500px;
+    margin-inline: 40px;
 }
-.details {
+.details-container {
     flex: 1;
+    padding-left: 50px;
 }
 .quantity-control {
     display: flex;
@@ -36,7 +42,7 @@ body {
     font-size: 18px;
 }
 .quantity-control input {
-    width: 40px;
+    width: 10px;
     text-align: center;
     font-size: 16px;
 }
