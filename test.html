@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пример реализации макета</title>
+  <!-- Подключение jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Подключение toastr (jquery notification) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <style>
+    /* Базовый CSS для расположения элементов */
+    .container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .left-images {
+      width: 30%;
+    }
+    .right-preview {
+      width: 70%;
+      padding-left: 20px;
+    }
+    .thumbnail {
+      width: 100%;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .preview-image {
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+    .purchase-section {
+      margin-top: 20px;
+    }
+    .quantity-widget {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .quantity-widget button {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+    .quantity-widget input {
+      width: 50px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0 5px;
+      pointer-events: none; /* Запрещаем ввод напрямую */
+    }
+    #buyButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Блок изображений -->
+  <div class="container">
+    <div class="left-images">
+      <img src="image1.jpg" alt="Изображение 1" class="thumbnail">
+      <img src="image2.jpg" alt="Изображение 2" class="thumbnail">
+      <img src="image3.jpg" alt="Изображение 3" class="thumbnail">
+    </div>
+    <div class="right-preview">
+      <!-- Изначально показываем первое изображение -->
+      <img src="image1.jpg" alt="Увеличенное изображение" id="preview" class="preview-image">
+    </div>
+  </div>
+
+  <!-- Блок управления покупкой -->
+  <div class="purchase-section">
+    <div class="quantity-widget">
+      <button type="button" id="decrease">–</button>
+      <input type="text" id="quantity" value="1" readonly>
+      <button type="button" id="increase">+</button>
+    </div>
+    <!-- Кнопка магазина переименована в "КУПИТЬ" -->
+    <button type="button" id="buyButton">КУПИТЬ</button>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Эффект зума: смена изображения при наведении
+      $('.thumbnail').hover(function() {
+        var src = $(this).attr('src');
+        $('#preview').attr('src', src);
+      });
+
+      // Логика виджета количества
+      $('#increase').click(function() {
+        var current = parseInt($('#quantity').val(), 10);
+        $('#quantity').val(current + 1);
+      });
+
+      $('#decrease').click(function() {
+        var current = parseInt($('#quantity').val(), 10);
+        if (current > 1) { // не допускаем значение меньше 1
+          $('#quantity').val(current - 1);
+        }
+      });
+
+      // Обработчик клика по кнопке "КУПИТЬ"
+      $('#buyButton').click(function() {
+        var qty = parseInt($('#quantity').val(), 10);
+        // Вывод уведомления с использованием toastr
+        toastr.options = {
+          "closeButton": true,
+          "positionClass": "toast-top-right",
+          "timeOut": "3000"
+        };
+        toastr.success('В корзину добавлено ' + qty + ' товаров');
+      });
+    });
+  </script>
+</body>
+</html>

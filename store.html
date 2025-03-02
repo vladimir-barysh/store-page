@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рубашка Medicine</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="images-container">
+            <img src="2.jpg" class="thumb" data-large="2large.jpg">
+            <img src="3.jpg" class="thumb" data-large="3large.jpg">
+            <img src="4.jpg" class="thumb" data-large="4large.jpg">
+        </div>
+
+        <div class="main-image">
+            <img src="1large.jpg" id="largeImage">
+        </div>
+
+        <div class="details-container">
+            <h1>Купальник спортивный</h1>
+
+            <div class="link-container">
+                <a href="#" class="sport-swimsuits">Спортивные купальники</a>
+                <a href="#" class="all-models">Все модели</a>
+                <a href="#" class="swimsuits">Купальники</a>
+            </div>
+
+            <div class="price-container">
+                <p>Цена: 2 449 ₽</p>
+                <p>Цена: <strong>2 227 ₽</strong></p>
+            </div>
+            
+            <div class="instock-container">
+                <p>В наличии в магазине </p>
+                <a href="#" class="arena">Arena</a>
+                <p>Бесплатная доставка</p>
+            </div>
+
+            <div class="quantity-container">
+                <button id="decrease">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button id="increase">+</button>
+            </div>
+
+            <div class="buttons-container">
+                <button class="buy-button" id="buy">КУПИТЬ</button>
+                <button class="favorities" id="add-fav">В ИЗБРАННОЕ</button>
+            </div>
+            
+            <div class="text-container">
+                <p>Инновационный женский купальник Arena One Darkness идеально подходит для спортсменов и любителей фитнеса, которые ищут производительность и стиль.</p>
+                <p>Ткань MaxLife Eco с высокой устойчивостью к хлору и встроенной защитой от ультрафиолета UPF 50+ чрезвычайно быстро сохнет и долговечна.</p>
+                <p>Материал: 100% полиэстер</p>
+            </div>
+
+            <div class="share-container">
+                <p>Поделиться:</p>
+                <button class="vk-link" id="vk">ВК</button>
+                <button class="tg-link" id="tg">ТГ</button>
+                <button class="inst-link" id="inst">ИНСТА</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="store.js"></script>
+
+</body>
+</html>
