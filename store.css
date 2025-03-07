@@ -36,7 +36,7 @@ body {
 .link-container{
     /*background-color: red;*/
     width: 600px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .sport-swimsuits{
@@ -50,7 +50,7 @@ body {
 .price-container{
     /*background-color: yellow;*/
     width: 600px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .old-price{
@@ -77,23 +77,27 @@ body {
 
 .instock-container{
     width: 570px;
-    background-color: #dddcdc;
+    background-color: #dbdbdbb0;
     padding: 15px;
     border-radius: 1px;
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .info-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #333;
+    color: #363636;
     margin-bottom: 5px;
-}
-
-.icon {
-    font-size: 20px;
 }
 
 a{
@@ -105,45 +109,114 @@ a:hover {
     text-decoration: underline;
 }
 
-.quantity-container {
-    /*background-color: orange;*/
-    width: 600px;
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
-}
-.quantity-control button {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-}
-.quantity-control input {
-    width: 10px;
-    text-align: center;
-    font-size: 16px;
-}
-
 .buttons-container{
     display: flex;
     /*background-color: lime;*/
     width: 600px;
-    margin-top: 25px;
-    padding-left: 10px;
+    margin-top: 90px;
     gap: 100px;
 }
+
 .buy-button {
+    height: 60px;
+    width: 250px;
     display: block;
     padding: 10px 20px;
-    background: blue;
+    background: rgb(37, 37, 255);
     color: white;
     text-align: center;
     cursor: pointer;
     border: none;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.favorities-button{
+    height: 60px;
+    width: 250px;
+    display: block;
+    border-radius: 0px;
+    border: 3px solid #dbdbdb;
+    padding: 10px 20px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.quantity-container {
+    /*background-color: orange;*/
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.decrease-button {
+    width: 30px;
+    height: 33px;
+    font-size: 18px;
+    border-radius: 0px;
+    border: none;
+    margin-right: 5px;
+}
+
+.increase-button {
+    width: 30px;
+    height: 33px;
+    font-size: 18px;
+    border-radius: 0px;
+    border: none;
+    margin-left: 5px;
+}
+
+.input-text{
+    width: 60px;
+    height: 25px;
+    display: block;
+    border-radius: 0px;
+    border: 3px solid #dbdbdb;
+    text-align: center;
 }
 
 .description-container{
     /*background-color: green;*/
     width: 750px;
-    margin-top: 70px;
+    margin-top: 50px;
+    color: #525252;
+}
+
+.share-container{
+    color: #525252;
+    margin-top: 50px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.vk-link{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #dbdbdb;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 30px;
+}
+
+
+.tg-link{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #dbdbdb;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.inst-link{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #dbdbdb;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 30px;
 }

@@ -6,6 +6,7 @@
     <title>Купальник Спортивный</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
     <link rel="stylesheet" href="store.css">
 </head>
@@ -39,26 +40,26 @@
             
             <div class="instock-container">
                 <div class="info-item">
-                    <span class="icon">✔</span>
+                    <span class="material-symbols-outlined">check</span>
                     <span>В наличии в магазине <a href="#" class="arena">Arena</a></span>
                 </div>
                 <div class="info-item">
-                    <span class="icon">🚛</span>
+                    <span class="material-symbols-outlined">shopping_cart_checkout</span>
                     <span>Бесплатная доставка</span>
                 </div>
             </div>
 
-            <div class="quantity-container">
-                <button id="decrease">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button id="increase">+</button>
-            </div>
-
             <div class="buttons-container">
                 <button class="buy-button" id="buy">КУПИТЬ</button>
-                <button class="favorities" id="add-fav">В ИЗБРАННОЕ</button>
+                <button class="favorities-button" id="add-fav">В ИЗБРАННОЕ</button>
             </div>
             
+            <div class="quantity-container">
+                <button class="decrease-button" id="decrease">-</button>
+                <input class="input-text" type="text" id="quantity" value="1" readonly>
+                <button class="increase-button" id="increase">+</button>
+            </div>
+
             <div class="description-container">
                 <p>Инновационный женский купальник Arena One Darkness идеально подходит для спортсменов и любителей фитнеса, которые ищут производительность и стиль.</p>
                 <p>Ткань MaxLife Eco с высокой устойчивостью к хлору и встроенной защитой от ультрафиолета UPF 50+ чрезвычайно быстро сохнет и долговечна.</p>
@@ -66,10 +67,10 @@
             </div>
 
             <div class="share-container">
-                <p>Поделиться:</p>
-                <button class="vk-link" id="vk">ВК</button>
-                <button class="tg-link" id="tg">ТГ</button>
-                <button class="inst-link" id="inst">ИНСТА</button>
+                <span clas="share-text">ПОДЕЛИТЬСЯ:</span>
+                <button class="vk-link" id="vk"><img src="src/vk.png" class="vk"></button>
+                <button class="tg-link" id="tg"><img src="src/tg.png" class="vk"></button>
+                <button class="inst-link" id="inst"><img src="src/inst.png" class="vk"></button>
             </div>
 
         </div>
