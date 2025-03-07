@@ -130,6 +130,10 @@ a:hover {
     font-size: 20px;
 }
 
+.buy-button:hover{
+    background: rgb(30, 30, 204);
+}
+
 .favorities-button{
     height: 60px;
     width: 250px;
@@ -141,6 +145,10 @@ a:hover {
     text-align: center;
     cursor: pointer;
     font-size: 20px;
+}
+
+.favorities-button:hover{
+    background: rgb(228, 228, 228);
 }
 
 .quantity-container {
@@ -161,6 +169,10 @@ a:hover {
     margin-right: 5px;
 }
 
+.decrease-button:hover{
+    background-color: #c5c5c5;
+}
+
 .increase-button {
     width: 30px;
     height: 33px;
@@ -168,6 +180,10 @@ a:hover {
     border-radius: 0px;
     border: none;
     margin-left: 5px;
+}
+
+.increase-button:hover{
+    background-color: #c5c5c5;
 }
 
 .input-text{
@@ -202,6 +218,9 @@ a:hover {
     margin-left: 30px;
 }
 
+.vk-link:hover{
+    background-color: #d3d3d3e0;
+}
 
 .tg-link{
     height: 50px;
@@ -212,6 +231,10 @@ a:hover {
     margin-left: 30px;
 }
 
+.tg-link:hover{
+    background-color: #d3d3d3e0;
+}
+
 .inst-link{
     height: 50px;
     width: 50px;
@@ -219,4 +242,8 @@ a:hover {
     border-radius: 20px;
     background-color: white;
     margin-left: 30px;
+}
+
+.inst-link:hover{
+    background-color: #d3d3d3e0;
 }
